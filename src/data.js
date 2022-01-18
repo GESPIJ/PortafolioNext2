@@ -4,7 +4,7 @@ export const featuredPortfolio = [
     // title: "Social Media App",
     title: "Market Place",
     //img: "/assets/bodegon2.JPG",
-    img: "/assets/bodegon_resized.jpg",
+    img: "/assets/bodegon_resized.JPG",
     // img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     link: "https://marketplace-liart.vercel.app/",
   },
@@ -17,7 +17,7 @@ export const featuredPortfolio = [
     descripcion:
       "Proyecto para detectar y predecir las fugas en oleoductos petroleros",
     //img: "/assets/PipelinePhoto.jpg",
-    img: "/assets/PipelinePhoto.jpg",
+    img: "/assets/PipelinePhoto.JPG",
   },
   // {
   //   id: 3,
@@ -29,7 +29,7 @@ export const featuredPortfolio = [
     id: 3,
     //title: "E-commerce Web Design",
     title: "Gestión y manejo de empresas",
-    img: "/assets/AMIM3.JPEG",
+    img: "/assets/AMIM3.jpeg",
     //img: "/assets/LuxTopper.JPG",
   },
   {
@@ -61,7 +61,7 @@ export const webPortfolio = [
     id: 1,
     // title: "Social Media App",
     title: "Market Place",
-    img: "/assets/bodegon2.JPG",
+    img: "/assets/bodegon_resized.JPG",
     // img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     link: "https://marketplace-liart.vercel.app/",
   },
@@ -71,7 +71,7 @@ export const webPortfolio = [
     //img: "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
     title: "Industrias",
     //img: "/assets/PipelinePhoto.jpg",
-    img: "/assets/PipelinePhoto.jpg",
+    img: "/assets/PipelinePhoto.JPG",
   },
   // {
   //   id: 3,
@@ -83,23 +83,17 @@ export const webPortfolio = [
     id: 3,
     //title: "E-commerce Web Design",
     title: "Gestión y manejo de empresas",
-    img: "/assets/AMIM3.JPEG",
+    img: "/assets/AMIM3.jpeg",
     //img: "/assets/LuxTopper.JPG",
   },
   {
     id: 4,
     //title: "E-commerce Web Design",
     title: "Gestión de hoteles",
-    img: "/assets/LuxTopper.JPG",
+    img: "/assets/LuxTopper2_resized.JPG",
     //img: "/assets/LuxTopper.JPG",
   },
-  {
-    id: 5,
-    //title: "E-commerce Web Design",
-    title: "Gestión de hoteles",
-    img: "/assets/SilverData.JPG",
-    //img: "/assets/LuxTopper.JPG",
-  },
+
   {
     id: 6,
     //title: "E-commerce Web Design",
