@@ -20,13 +20,11 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="intro" id="intro">
-      <div className="left">
-        <div className="imgContainer">
+    <div className={styles.intro} id="intro">
+      <div className={styles.left}>
+        <div className={styles.imgContainer}>
           <Image
-            className="imagenContenedorIntro"
             src="/assets/Foto_Graduacion_square.jpg"
-            //src="/assets/man.png"
             alt="Imagen"
             width={700}
             height={700}
@@ -34,8 +32,8 @@ export default function Intro() {
           {/* <img src="assets/Foto_Graduacion_square.jpg" alt="" /> */}
         </div>
       </div>
-      <div className="right">
-        <div className="wrapper">
+      <div className={styles.right}>
+        <div className={styles.wrapper}>
           <h2>Hi There, I'm</h2>
           <h1>Greg Spinetti</h1>
           <h3>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 //import "./portfolio.scss";
 import Image from "next/image";
-import styles from "./portfolio.module.scss";
+//import styles from "./portfolio.module.scss";
 import {
   featuredPortfolio,
   webPortfolio,
@@ -61,10 +61,10 @@ export default function Portfolio() {
     }
   }, [selected]);
 
-  console.log("Estos son los estilos de portfolio");
-  console.log(styles);
+  //console.log("Estos son los estilos de portfolio");
+  //console.log(styles);
   return (
-    <div className={styles.portfolio} id="portfolio">
+    <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
         {list.map((item) => (
@@ -79,10 +79,10 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <div className={styles.container}>
+      <div className="container">
         {!showingProject ? (
           data.map((d) => (
-            <div key={d.id} className={styles.item}>
+            <div key={d.id} className="item">
               <Image
                 src={d.img}
                 width={440}

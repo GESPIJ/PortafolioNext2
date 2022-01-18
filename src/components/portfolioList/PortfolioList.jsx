@@ -1,5 +1,5 @@
 //import "./portfolioList.scss";
-import styles from "./portfolioList.module.scss";
+//import styles from "./portfolioList.module.scss";
 
 export default function PortfolioList({
   id,
@@ -9,12 +9,12 @@ export default function PortfolioList({
   setselectedProject,
   setshowingProject,
 }) {
-  let activeClass = active ? styles.another_style : styles.portfolioList;
-  console.log("Estos son los estilos de portfolio list");
-  console.log(styles);
+  // let activeClass = active ? styles.another_style : styles.portfolioList;
+  //console.log("Estos son los estilos de portfolio list");
+  //console.log(styles);
   return (
     <li
-      className={activeClass}
+      className={active ? "portfolioList active" : "portfolioList"}
       onClick={() => {
         setshowingProject(false);
         setSelected(id);
