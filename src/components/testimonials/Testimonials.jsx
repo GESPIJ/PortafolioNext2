@@ -46,6 +46,7 @@ export default function Testimonials() {
       desc: "Trabajar con personas como Greg te termina motivandome inevitablemente a dar lo mejor de ti y a buscar expandirte un poco más cada día a nivel profesional",
       featured: true,
     },
+    //hola
     {
       id: 3,
       name: "Daniel Rodriguez",
