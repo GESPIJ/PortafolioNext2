@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import profilePci from "../../../public/assets/Foto_Graduacion_square.jpg";
 
 export default function Intro() {
   const textRef = useRef();
@@ -25,11 +26,13 @@ export default function Intro() {
         <div className="imgContainer">
           <Image
             className="imagenContenedorIntro"
-            src="/assets/Foto_Graduacion_square.jpg"
+            //layout={"fill"}
+            //src="/assets/Foto_Graduacion_square.jpg"
+            src={profilePci}
             //src="/assets/man.png"
-            alt="Imagen"
-            width={700}
-            height={700}
+            //alt="Imagen"
+            //width={700}
+            //height={700}
           />
           {/* <img src="assets/Foto_Graduacion_square.jpg" alt="" /> */}
         </div>

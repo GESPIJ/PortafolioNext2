@@ -117,7 +117,19 @@
 
 @media (max-width: 400px) {
   .imagenContenedorIntro {
-    max-height: 300px;
-    max-width: 300px;
+    //max-height: 300px;
+    //max-width: 300px;
+    //width: 70%;
+    //height: 70%;
+  }
+  .imagen {
+    width: 70%;
+    height: 70%;
+  }
+
+  .imgContainer {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: inherit !important;
   }
 }
