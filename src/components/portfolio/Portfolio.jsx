@@ -120,7 +120,9 @@ export default function Portfolio() {
                 <div
                 //style={{ width: "40%", height: "40%" }}
                 >
-                  <p>{selectedProject.descripcion}</p>
+                  <p style={{ textAlign: "justify" }}>
+                    {selectedProject.descripcion}
+                  </p>
                   <br />
                   <div
                     style={{

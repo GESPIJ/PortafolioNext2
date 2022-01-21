@@ -41,6 +41,9 @@ export const featuredPortfolio = [
     //title: "E-commerce Web Design",
     title: "Core Bancario",
     img: "/assets/BancoDeVenezuela.jpg",
+    titulo: "Departamento Seguridad Banco de Venezuela",
+    descripcion:
+      "Diseño, implementación y mantenimiento de sistemas administrativos empleados para la prevención, monitoreo y resolución de fraudes bancarios.",
     //img: "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
   },
   // {
@@ -68,6 +71,8 @@ export const webPortfolio = [
     img: "/assets/bodegon_resized.JPG",
     // img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     link: "https://marketplace-liart.vercel.app/",
+    titulo: "Bodegon 99",
+    descripcion: "Tus dulces y comidas importadas favoritas ahora más cerca",
   },
   {
     id: 2,
@@ -76,6 +81,9 @@ export const webPortfolio = [
     title: "Industrias",
     //img: "/assets/PipelinePhoto.jpg",
     img: "/assets/PipelinePhoto.JPG",
+    titulo: "iDetectFugas",
+    descripcion:
+      "Sistema basado en inteligencia artificial para detectar y prevenir fugas en oleoductos",
   },
   // {
   //   id: 3,
@@ -88,6 +96,8 @@ export const webPortfolio = [
     //title: "E-commerce Web Design",
     title: "Gestión y manejo de empresas",
     img: "/assets/AMIM3.jpeg",
+    titulo: "AMIM",
+    descripcion: "Sistema de gestion y manejo de inventario para empresas",
     //img: "/assets/LuxTopper.JPG",
   },
   {
@@ -95,6 +105,10 @@ export const webPortfolio = [
     //title: "E-commerce Web Design",
     title: "Gestión de hoteles",
     img: "/assets/LuxTopper2_resized.JPG",
+    descripcion:
+      "Habitaciones lujosas en la Costa Norte de Estados Unidos al mejor precio",
+    link: "http://www.luxtopper.com",
+
     //img: "/assets/LuxTopper.JPG",
   },
 
@@ -103,6 +117,9 @@ export const webPortfolio = [
     //title: "E-commerce Web Design",
     title: "Core Bancario",
     img: "/assets/BancoDeVenezuela.jpg",
+    titulo: "Departamento Seguridad Banco de Venezuela",
+    descripcion:
+      "Diseño, implementación y mantenimiento de sistemas administrativos empleados para la prevención, monitoreo y resolución de fraudes bancarios.",
     //img: "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
   },
 
