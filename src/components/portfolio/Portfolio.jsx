@@ -133,10 +133,12 @@ export default function Portfolio() {
                   >
                     <button
                       style={{
-                        display: selectedProject.link ? "auto" : "none",
+                        opacity: selectedProject.link ? "1" : "0.6",
                       }}
                       onClick={() => {
-                        window.location.href = selectedProject.link;
+                        if (selectedProject.link) {
+                          window.location.href = selectedProject.link;
+                        }
                       }}
                     >
                       Link
