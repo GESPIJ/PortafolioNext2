@@ -84,6 +84,34 @@
       }
     }
 
+    .individualProjectContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+      div {
+        // margin-top: 20px;
+        width: 100%;
+        padding: 15px;
+        padding-top: 0px;
+        justify-content: center;
+      }
+      button {
+        display: block;
+        background-color: #15023a;
+        color: white;
+        font-size: 14px;
+        //margin-right: 50px;
+        padding: 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        //margin-top: 20px;
+        padding-top: 0px;
+        width: 30%;
+        padding-top: 5px;
+      }
+    }
+
     @media (min-width: 768px) {
       .item {
         width: 45%;
@@ -94,6 +122,19 @@
         max-height: 263px;
         img {
           object-fit: contain;
+        }
+      }
+      .individualProjectContainer {
+        flex-direction: row;
+        //justify-content: ;
+        div {
+          width: 40%;
+          padding: 15px;
+          padding-left: 0px;
+          justify-content: start;
+        }
+        button {
+          width: 80%;
         }
       }
     }

@@ -82,33 +82,34 @@ export default function Portfolio() {
       <div className="container">
         {!showingProject ? (
           data.map((d) => (
-            <div key={d.id} className="item">
-              <Image
-                src={d.img}
-                width={440}
-                height={250}
-                onClick={
-                  d.link
-                    ? () => {
-                        window.location.href = d.link;
-                      }
-                    : () => {
-                        //setselectedProject(true);
-                        setselectedProject(d);
-                        setshowingProject(true);
-                      }
-                }
-                alt=""
-              />
+            <div
+              key={d.id}
+              className="item"
+              onClick={
+                d.link
+                  ? () => {
+                      //window.location.href = d.link;
+                      setselectedProject(d);
+                      setshowingProject(true);
+                    }
+                  : () => {
+                      //setselectedProject(true);
+                      setselectedProject(d);
+                      setshowingProject(true);
+                    }
+              }
+            >
+              <Image src={d.img} width={440} height={250} alt="" />
               <h3>{d.title}</h3>
             </div>
           ))
         ) : (
           <div>
             <div style={{ width: "100%", height: "100%" }}>
-              <h3>{selectedProject.titulo}</h3>
-              <div>
+              <h3 style={{ textAlign: "center" }}>{selectedProject.titulo}</h3>
+              <div className="individualProjectContainer">
                 <Image
+                  //style={{borderRadius:""}}
                   // width="60%"
                   // height="60%"
                   width={440}
@@ -116,8 +117,29 @@ export default function Portfolio() {
                   alt="Imagen"
                   src={selectedProject.img}
                 />
-                <div style={{ width: "40%", height: "40%" }}>
-                  <span>{selectedProject.descripcion}</span>
+                <div
+                //style={{ width: "40%", height: "40%" }}
+                >
+                  <p>{selectedProject.descripcion}</p>
+                  <br />
+                  <div
+                    style={{
+                      textAlign: "center",
+                      display: "flex",
+                      // justifyContent: "center",
+                    }}
+                  >
+                    <button
+                      style={{
+                        display: selectedProject.link ? "auto" : "none",
+                      }}
+                      onClick={() => {
+                        window.location.href = selectedProject.link;
+                      }}
+                    >
+                      Link
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

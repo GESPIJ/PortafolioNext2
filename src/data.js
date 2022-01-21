@@ -7,6 +7,8 @@ export const featuredPortfolio = [
     img: "/assets/bodegon_resized.JPG",
     // img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     link: "https://marketplace-liart.vercel.app/",
+    titulo: "Bodegon 99",
+    descripcion: "Tus dulces y comidas importadas favoritas ahora más cerca",
   },
   {
     id: 2,
@@ -15,7 +17,7 @@ export const featuredPortfolio = [
     title: "Industrias",
     titulo: "iDetectFugas",
     descripcion:
-      "Proyecto para detectar y predecir las fugas en oleoductos petroleros",
+      "Sistema basado en inteligencia artificial para detectar y prevenir fugas en oleoductos",
     //img: "/assets/PipelinePhoto.jpg",
     img: "/assets/PipelinePhoto.JPG",
   },
@@ -30,6 +32,8 @@ export const featuredPortfolio = [
     //title: "E-commerce Web Design",
     title: "Gestión y manejo de empresas",
     img: "/assets/AMIM3.jpeg",
+    titulo: "AMIM",
+    descripcion: "Sistema de gestion y manejo de inventario para empresas",
     //img: "/assets/LuxTopper.JPG",
   },
   {
