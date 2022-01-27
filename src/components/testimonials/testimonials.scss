@@ -127,7 +127,9 @@
     }
   }
 }
-
+.testimonialInfo {
+  text-align: center;
+}
 .userImageContainer {
   width: 60px;
   height: 60px;
@@ -139,7 +141,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .user {
     height: 25px;
     width: 25px;

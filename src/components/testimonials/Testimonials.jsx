@@ -33,7 +33,8 @@ export default function Testimonials() {
       id: 1,
       name: "Jose Manuel Borelly",
       title: "CEO JF2 Soluciones Integrales",
-      img: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      //img: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      img: "/assets/JoseManuelPhoto_resized.jpeg",
       icon: "/assets/twitter.png",
       desc: "Compromiso y entrega no solo para cumplir con los deadlines, sino que muestró interés genuino en los objetivos de la propia empresa",
     },
@@ -64,7 +65,7 @@ export default function Testimonials() {
   //debugger;
   return (
     <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
+      <h1>Testimonios</h1>
       <div className="container">
         {data.map((d) => {
           let activeClass = d.featured ? "card featured" : "card";
@@ -103,7 +104,7 @@ export default function Testimonials() {
                 />
               </div>
               <div className="center">{d.desc}</div>
-              <div className="bottom">
+              <div className="testimonialInfo bottom">
                 <h3>{d.name}</h3>
                 <h4>{d.title}</h4>
               </div>

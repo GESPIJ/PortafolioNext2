@@ -1,3 +1,15 @@
+const Python = { title: "Python", img: "/assets/pythonLogo.png" };
+const React = { title: "React", img: "/assets/reactLogo.png" };
+const Next = { title: "Next", img: "/assets/nextjsLogo.png" };
+const Redux = { title: "Redux", img: "/assets/reduxLogo.png" };
+const Javascript = { title: "Javascript", img: "/assets/javascriptLogo.png" };
+const Css = { title: "Css", img: "/assets/cssLogo.png" };
+const Vue = { title: "Vue", img: "/assets/vueLogo.png" };
+const NodeJs = { title: "Node", img: "/assets/nodejsLogo.png" };
+const Laravel = { title: "Laravel", img: "/assets/LaravelLogo.png" };
+const Firebase = { title: "Firebase", img: "/assets/fireBaseLogo_Resized.png" };
+const Flutter = { title: "Flutter", img: "/assets/flutterLogo.png" };
+
 export const featuredPortfolio = [
   {
     id: 1,
@@ -9,7 +21,8 @@ export const featuredPortfolio = [
     //link: "https://marketplace-liart.vercel.app/",
     link: "http://bodegon99.com",
     titulo: "Bodegon 99",
-    descripcion: "Tus dulces y comidas importadas favoritas ahora más cerca",
+    descripcion: "Tus dulces y comidas importadas favoritas ahora más cerca. ",
+    tecnologias: [React, Firebase],
   },
   {
     id: 2,
@@ -18,9 +31,10 @@ export const featuredPortfolio = [
     title: "Industrias",
     titulo: "iDetectFugas",
     descripcion:
-      "Sistema basado en inteligencia artificial para detectar y prevenir fugas en oleoductos",
+      "Sistema industrial basado en inteligencia artificial para monitorear, detectar y prevenir fugas en oleoductos",
     //img: "/assets/PipelinePhoto.jpg",
     img: "/assets/PipelinePhoto.JPG",
+    tecnologias: [React, Python, Redux],
   },
   // {
   //   id: 3,
@@ -35,6 +49,7 @@ export const featuredPortfolio = [
     img: "/assets/AMIM3.jpeg",
     titulo: "AMIM",
     descripcion: "Sistema de gestion y manejo de inventario para empresas",
+    tecnologias: [Javascript, Css, Python],
     //img: "/assets/LuxTopper.JPG",
   },
   {
@@ -45,6 +60,7 @@ export const featuredPortfolio = [
     titulo: "Departamento Seguridad Banco de Venezuela",
     descripcion:
       "Diseño, implementación y mantenimiento de sistemas administrativos empleados para la prevención, monitoreo y resolución de fraudes bancarios.",
+    tecnologias: [React, NodeJs, Javascript, Laravel, Css, Next],
     //img: "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
   },
   // {
@@ -75,6 +91,7 @@ export const webPortfolio = [
     link: "http://bodegon99.com",
     titulo: "Bodegon 99",
     descripcion: "Tus dulces y comidas importadas favoritas ahora más cerca",
+    tecnologias: [React, Firebase],
   },
   {
     id: 2,
@@ -85,7 +102,8 @@ export const webPortfolio = [
     img: "/assets/PipelinePhoto.JPG",
     titulo: "iDetectFugas",
     descripcion:
-      "Sistema basado en inteligencia artificial para detectar y prevenir fugas en oleoductos",
+      "Sistema industrial basado en inteligencia artificial para monitorear, detectar y prevenir fugas en oleoductos",
+    tecnologias: [React, Python, Redux],
   },
   // {
   //   id: 3,
@@ -100,6 +118,7 @@ export const webPortfolio = [
     img: "/assets/AMIM3.jpeg",
     titulo: "AMIM",
     descripcion: "Sistema de gestion y manejo de inventario para empresas",
+    tecnologias: [Javascript, Css, Python],
     //img: "/assets/LuxTopper.JPG",
   },
   {
@@ -110,6 +129,7 @@ export const webPortfolio = [
     descripcion:
       "Habitaciones lujosas en la Costa Norte de Estados Unidos al mejor precio",
     link: "http://www.luxtopper.com",
+    tecnologias: [React, Css],
 
     //img: "/assets/LuxTopper.JPG",
   },
@@ -122,6 +142,7 @@ export const webPortfolio = [
     titulo: "Departamento Seguridad Banco de Venezuela",
     descripcion:
       "Diseño, implementación y mantenimiento de sistemas administrativos empleados para la prevención, monitoreo y resolución de fraudes bancarios.",
+    tecnologias: [React, NodeJs, Javascript, Laravel, Css, Next],
     //img: "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
   },
 
@@ -162,26 +183,34 @@ export const mobilePortfolio = [
     id: 1,
     title: "Mobile Social Media App",
     //img: "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
-    img: "/assets/FitnessApp.jpeg",
+    img: "/assets/FitnessAppMerged.jpg",
+    titulo: "Fitness App",
+    descripcion:
+      "Aplicación usada para monitorear y llevar registros semanales de la actividad física ",
+    tecnologias: [Flutter],
   },
   {
     id: 2,
     title: "Mobile Rampa UI Design",
     //img: "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
-    img: "/assets/FitnessApp2.jpeg",
+    img: "/assets/BooksAppMerged.jpg",
+    titulo: "Read Lovers",
+    descripcion:
+      "Red social para amantes de la lectura. Organiza, gestiona tus libros favoritos y compartelo con tus amigos en tiempo real",
+    tecnologias: [Flutter, Firebase],
   },
-  {
-    id: 3,
-    title: "Mobile E-commerce Design",
-    //img: "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
-    img: "/assets/BookApp1.jpeg",
-  },
-  {
-    id: 4,
-    title: "Mobile Relax App",
-    //img: "https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900",
-    img: "/assets/BookApp2.jpeg",
-  },
+  // {
+  //   id: 3,
+  //   title: "Mobile E-commerce Design",
+
+  //   img: "/assets/BookApp1.jpeg",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Mobile Relax App",
+
+  //   img: "/assets/BookApp2.jpeg",
+  // },
   // {
   //   id: 5,
   //   title: "Mobile Hero Design",
@@ -195,16 +224,24 @@ export const mobilePortfolio = [
 ];
 
 export const designPortfolio = [
-  // {
-  //   id: 1,
-  //   title: "Design Social Media App",
-  //   img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  // },
-  // {
-  //   id: 2,
-  //   title: "Design Rampa UI Design",
-  //   img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-  // },
+  {
+    id: 1,
+    title: "Mine Sweeper",
+    img: "/assets/MineSweeper.jpeg",
+    titulo: "AI Buscaminas",
+    descripcion:
+      "El juego original de buscaminas basado en inteligencia artificial",
+    tecnologias: [Python],
+  },
+  {
+    id: 2,
+    title: "Scrabble",
+    img: "/assets/ScrabbleAI.jpeg",
+    titlo: "AI Scrabble",
+    descripcion:
+      "El clásico juego de Scrabble, resuelto por medio de la inteligencia artificial",
+    tecnologias: [Python],
+  },
   // {
   //   id: 3,
   //   title: "Design E-commerce Web Design",

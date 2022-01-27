@@ -1,6 +1,7 @@
 //import "./topbar.scss";
 //import styles from "./topbar.module.scss";
 import { Person, Mail } from "@material-ui/icons";
+import Image from "next/image";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   //let activeClass = "topbar " + (menuOpen && "active");
@@ -15,17 +16,39 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <div className="left">
           <a href="#intro" className="logo">
             {/* genius. */}
-            Developer
+            Desarrollador
           </a>
           <div className="itemContainer">
             <Person className="icon" />
             {/* <span>+44 924 12 74</span> */}
-            <span>+58 424 183 3510</span>
+            <span>
+              {" "}
+              <a
+                className="whatsapp"
+                href="https://wa.me/5804241833510"
+                target="_blank"
+              >
+                +58 424-1833510
+              </a>
+            </span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
             {/* <span>safak@genius.com</span> */}
             <span>gregspinetti@gmail.com</span>
+          </div>
+          <div
+            className="itemContainer"
+            style={{ cursor: "pointer", target: "_blank" }}
+          >
+            <Image
+              onClick={() => {
+                window.location.href = "https://www.github.com/GESPIJ";
+              }}
+              src="/assets/githubLogo.png"
+              width={"30px"}
+              height={"30px"}
+            />
           </div>
         </div>
         <div className="right">

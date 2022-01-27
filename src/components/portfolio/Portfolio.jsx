@@ -13,6 +13,7 @@ import {
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
+  const [projectType, setprojectType] = useState("featured");
   const [selectedProject, setselectedProject] = useState(null);
   const [showingProject, setshowingProject] = useState(false);
   const [data, setData] = useState([]);
@@ -29,10 +30,10 @@ export default function Portfolio() {
       id: "mobile",
       title: "Mobile App",
     },
-    // {
-    //   id: "design",
-    //   title: "Design",
-    // },
+    {
+      id: "design",
+      title: "Educacional",
+    },
     // {
     //   id: "content",
     //   title: "Content",
@@ -43,12 +44,15 @@ export default function Portfolio() {
     switch (selected) {
       case "featured":
         setData(featuredPortfolio);
+        setprojectType("featured");
         break;
       case "web":
         setData(webPortfolio);
+        setprojectType("web");
         break;
       case "mobile":
         setData(mobilePortfolio);
+        setprojectType("mobile");
         break;
       case "design":
         setData(designPortfolio);
@@ -65,7 +69,7 @@ export default function Portfolio() {
   //console.log(styles);
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>Portafolio</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
@@ -79,7 +83,7 @@ export default function Portfolio() {
           />
         ))}
       </ul>
-      <div className="container">
+      <div className="container" style={{ overflowY: "scroll" }}>
         {!showingProject ? (
           data.map((d) => (
             <div
@@ -104,10 +108,18 @@ export default function Portfolio() {
             </div>
           ))
         ) : (
-          <div>
+          <div style={{ width: "95%" }}>
             <div style={{ width: "100%", height: "100%" }}>
-              <h3 style={{ textAlign: "center" }}>{selectedProject.titulo}</h3>
-              <div className="individualProjectContainer">
+              <h3 style={{ textAlign: "center", fontSize: "18px" }}>
+                {selectedProject.titulo}
+              </h3>
+              <div
+                className={
+                  projectType != "mobile"
+                    ? "individualProjectContainer"
+                    : "individualMobileContainer"
+                }
+              >
                 <Image
                   //style={{borderRadius:""}}
                   // width="60%"
@@ -123,7 +135,36 @@ export default function Portfolio() {
                   <p style={{ textAlign: "justify" }}>
                     {selectedProject.descripcion}
                   </p>
-                  <br />
+                  <div style={{ marginBottom: "4px" }}>
+                    <div style={{ display: "flex" }}>
+                      <span>Tecnologias: </span>
+                      {selectedProject.tecnologias.map((tecnologia) => {
+                        return (
+                          tecnologia &&
+                          tecnologia.img && (
+                            <img
+                              style={{
+                                marginLeft: "10px",
+                                marginRight: "10px",
+                              }}
+                              width={
+                                tecnologia.title === "React"
+                                  ? "24px"
+                                  : tecnologia.title === "Node" ||
+                                    tecnologia.title === "Next"
+                                  ? "28px"
+                                  : "20px"
+                              }
+                              height="20px"
+                              alt={tecnologia.title}
+                              src={tecnologia.img}
+                            />
+                          )
+                        );
+                      })}
+                    </div>
+                  </div>
+                  {/* <br /> */}
                   <div
                     style={{
                       textAlign: "center",
